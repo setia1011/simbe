@@ -16,8 +16,7 @@ To execute generated queries: `alembic upgrade head`
 On the terminal, inside root directory, execute: `python run.py`
 
 ### Author
-Setia
-https://github.com/setia1011
-
-~
-**TecHack.ID - Codex.ID**
+Setia\
+https://github.com/setia1011 \
+https://techack.id \
+https://codex.id
