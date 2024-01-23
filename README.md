@@ -9,7 +9,7 @@ More: https://virtualenv.pypa.io/en/latest/
 To install libraries: `pip install -r install.txt`
 
 ### Database
-To generate queries: `alembic revision --autogenerate`
+To generate queries: `alembic revision --autogenerate`\
 To execute generated queries: `alembic upgrade head`
 
 ### Run
