@@ -8,6 +8,24 @@ More: https://virtualenv.pypa.io/en/latest/
 ### Libraries
 To install libraries: `pip install -r install.txt`
 
+### .env
+Example:
+
+PROJECT_NAME=simbe\
+BACKEND_CORS_ORIGINS=[] \
+MYSQL_ROOT_PASSWORD= \
+MYSQL_USER= \
+MYSQL_PASSWORD= \
+MYSQL_HOST= \
+MYSQL_PORT= \
+MYSQL_DATABASE= \
+JWT_SECRET= \
+JWT_ALGORITHM=HS256 \
+SMTP_USERNAME= \
+SMTP_PASSWORD= \
+SMTP_HOST=smtp.gmail.com \
+SMTP_PORT=465
+
 ### Database
 To generate queries: `alembic revision --autogenerate`\
 To execute generated queries: `alembic upgrade head`
