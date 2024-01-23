@@ -2,7 +2,7 @@
 A blueprint of a SIMPLE BACKEND (Simbe) with the latest version of FastAPI, Pydantic, SQLAlchemy and Alembic.
 
 ### Venv
-To create a virtual environment: `virtualenv venv`
+To create a virtual environment: `virtualenv venv`\
 More: https://virtualenv.pypa.io/en/latest/
 
 ### Libraries
