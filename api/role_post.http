@@ -4,6 +4,6 @@ Content-Type: application/json
 Accept: */*
 
 {
-   "role": "clients",
-   "role_description": "clients"
+   "role": "admin",
+   "role_description": "administrator"
 }

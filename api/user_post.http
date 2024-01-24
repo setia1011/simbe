@@ -4,13 +4,13 @@ Content-Type: application/json
 Accept: */*
 
 {
-   "username": "wafi",
+   "username": "setia",
    "password": "123",
-   "email": "wafi@gmail.com",
-   "name": "Wafi D. El Fahmi",
+   "email": "setia@techack.com",
+   "name": "Setiadi H.",
    "role_id": 1,
    "id_type_id": 1,
-   "id_number": "1233",
-   "phone": "1233",
-   "address": "tess"
+   "id_number": "1233455",
+   "phone": "123323233",
+   "address": "Jl. Merdeka No. 1002, Jakarta, Indonesia"
 }

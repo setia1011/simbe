@@ -1,8 +1,8 @@
 """empty message
 
-Revision ID: f994c0ebc9a9
+Revision ID: c8f68fe444ae
 Revises: 
-Create Date: 2024-01-24 18:28:25.020323
+Create Date: 2024-01-25 03:47:43.952041
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'f994c0ebc9a9'
+revision: str = 'c8f68fe444ae'
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -30,12 +30,12 @@ def upgrade() -> None:
     op.create_index(op.f('ix_id_type_id_type'), 'id_type', ['id_type'], unique=True)
     op.create_table('role',
     sa.Column('id', sa.Integer(), nullable=False),
-    sa.Column('role', sa.VARCHAR(length=150), nullable=True),
+    sa.Column('role', sa.VARCHAR(length=150), nullable=False),
     sa.Column('role_description', sa.VARCHAR(length=500), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_role_id'), 'role', ['id'], unique=False)
-    op.create_index(op.f('ix_role_role'), 'role', ['role'], unique=False)
+    op.create_index(op.f('ix_role_role'), 'role', ['role'], unique=True)
     op.create_index(op.f('ix_role_role_description'), 'role', ['role_description'], unique=False)
     op.create_table('user',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -43,7 +43,7 @@ def upgrade() -> None:
     sa.Column('password', sa.String(length=255), nullable=False),
     sa.Column('email', sa.String(length=255), nullable=False),
     sa.Column('name', sa.String(length=50), nullable=False),
-    sa.Column('role_id', sa.Integer(), server_default='4', nullable=True),
+    sa.Column('role_id', sa.Integer(), server_default='1', nullable=True),
     sa.Column('id_type_id', sa.Integer(), nullable=True),
     sa.Column('id_number', sa.String(length=50), nullable=True),
     sa.Column('phone', sa.String(length=15), nullable=True),

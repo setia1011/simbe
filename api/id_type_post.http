@@ -4,6 +4,6 @@ Content-Type: application/json
 Accept: */*
 
 {
-   "id_type": "ok",
-   "id_description": "kartu tanda anggota"
+   "id_type": "nik",
+   "id_description": "nomor induk kependudukan"
 }
