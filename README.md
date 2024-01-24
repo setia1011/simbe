@@ -68,7 +68,7 @@ On the terminal, inside root directory, execute: ```python run.py```
 http://localhost:8000/docs \
 http://localhost:8000/redoc
 
-<img src='documentation.png' width=300 />
+<img src='documentation.png' />
 
 ### Author
 **Setia**\
