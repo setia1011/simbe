@@ -1,5 +1,7 @@
 ### SIMBE
-A blueprint of a SIMPLE BACKEND (Simbe) with the latest version of FastAPI, Pydantic, SQLAlchemy and Alembic
+A blueprint of a SIMPLE BACKEND (Simbe) with the latest version of FastAPI, Pydantic, SQLAlchemy and Alembic.
+
+![Dir](Dir.PNG)
 
 ### Venv
 To create a virtual environment: `virtualenv venv`\
