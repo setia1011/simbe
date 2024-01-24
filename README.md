@@ -63,8 +63,14 @@ To execute generated queries: ```alembic upgrade head```
 On the terminal, inside root directory, execute: ```python run.py```
 
 ### Author
-Setia\
+**Setia**\
 setiadi1457@gmail.com\
 https://github.com/setia1011 \
 https://techack.id \
 https://codex.id
+
+### References
+https://fastapi.tiangolo.com \
+https://docs.pydantic.dev/latest \
+https://www.sqlalchemy.org \
+https://alembic.sqlalchemy.org/en/latest
