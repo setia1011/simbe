@@ -12,9 +12,9 @@ class User(Base):
    password = Column(String(255), nullable=False)
    email = Column(String(255), unique=True, nullable=False, index=True)
    name = Column(String(50), nullable=False, index=True)
-   role_id = Column(Integer, ForeignKey('role.id'), server_default="4", index=True)
+   role_id = Column(Integer, ForeignKey('role.id'), server_default="1", index=True)
 
-   id_type = Column(Integer, ForeignKey('user_id_type.id'), index=True)
+   id_type_id = Column(Integer, ForeignKey('id_type.id'), index=True)
    id_number = Column(String(50), index=True)
    phone = Column(String(15))
    address = Column(TEXT)
@@ -24,3 +24,6 @@ class User(Base):
    created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=func.now())
    editor = Column(Integer)
    updated_at = Column(TIMESTAMP(timezone=True), server_default=text("NULL ON UPDATE CURRENT_TIMESTAMP"))
+
+   role = relationship('Role', backref='user_role', primaryjoin='Role.id==User.role_id')
+   id_type = relationship('IdType', backref='user_id_type', primaryjoin='IdType.id==User.id_type_id')

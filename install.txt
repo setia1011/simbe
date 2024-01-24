@@ -3,6 +3,7 @@ fastapi
 sqlalchemy
 pydantic
 pydantic-settings
+pydantic[email]
 python-dotenv
 alembic
 mysqlclient
