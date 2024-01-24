@@ -1,7 +1,34 @@
 ### SIMBE
 A blueprint of a SIMPLE BACKEND (Simbe) with the latest version of FastAPI, Pydantic, SQLAlchemy and Alembic.
 
-![Dir](Dir.PNG)
+```
+simbe
+├── alembic
+│   ├── env.py
+│   ├── README
+│   ├── script.py.mako
+│   └── versions
+│       └── d3dadd4bff67_.py
+├── alembic.ini
+├── app
+│   ├── core
+│   │   ├── config.py
+│   │   └── database.py
+│   ├── main.py
+│   ├── utils
+│   └── v1
+│       ├── api.py
+│       ├── models
+│       ├── routers
+│       ├── schemas
+│       └── services
+├── venv
+├── install.txt
+├── LICENSE
+├── README.md
+├── requirements.txt
+└── run.py
+```
 
 ### Venv
 To create a virtual environment: `virtualenv venv`\
