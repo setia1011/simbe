@@ -5,7 +5,6 @@ A blueprint of a SIMPLE BACKEND (Simbe) with the latest version of FastAPI, Pyda
 simbe
 ├── alembic
 │   ├── env.py
-│   ├── README
 │   ├── script.py.mako
 │   └── versions
 │       └── d3dadd4bff67_.py
