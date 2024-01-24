@@ -35,6 +35,7 @@ On the terminal, inside root directory, execute: `python run.py`
 
 ### Author
 Setia\
+setiadi1457@gmail.com\
 https://github.com/setia1011 \
 https://techack.id \
 https://codex.id
