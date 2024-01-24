@@ -64,6 +64,12 @@ To execute generated queries: ```alembic upgrade head```
 ### Run
 On the terminal, inside root directory, execute: ```python run.py```
 
+### Documentation
+http://localhost:8000/docs \
+http://localhost:8000/redoc
+
+<img src='documentation.png' width=300 />
+
 ### Author
 **Setia**\
 setiadi1457@gmail.com\
