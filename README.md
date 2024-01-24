@@ -31,11 +31,11 @@ simbe
 ```
 
 ### Venv
-To create a virtual environment: `virtualenv venv`\
+To create a virtual environment: ```virtualenv venv```\
 More: https://virtualenv.pypa.io/en/latest/
 
 ### Libraries
-To install libraries: `pip install -r install.txt`
+To install libraries: ```pip install -r install.txt```
 
 ### .env
 Example:
@@ -56,11 +56,11 @@ SMTP_HOST=smtp.gmail.com \
 SMTP_PORT=465
 
 ### Database
-To generate queries: `alembic revision --autogenerate`\
-To execute generated queries: `alembic upgrade head`
+To generate queries: ```alembic revision --autogenerate```\
+To execute generated queries: ```alembic upgrade head```
 
 ### Run
-On the terminal, inside root directory, execute: `python run.py`
+On the terminal, inside root directory, execute: ```python run.py```
 
 ### Author
 Setia\
