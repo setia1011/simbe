@@ -32,6 +32,9 @@ simbe
 
 ### Venv
 To create a virtual environment: ```virtualenv venv```\
+In Linux or Mac, to activate the new python environment: ```source venv/bin/activate```\
+Or in Windows: ```venv\Scripts\activate```
+
 More: https://virtualenv.pypa.io/en/latest/
 
 ### Libraries
