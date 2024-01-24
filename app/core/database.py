@@ -21,6 +21,7 @@ def db_sync_session():
    try:
       yield db
    finally:
+      db.commit()
       db.close()
 
 @as_declarative()

@@ -1,0 +1,9 @@
+POST /v1/api/user/role HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+Accept: */*
+
+{
+   "role": "clients",
+   "role_description": "clients"
+}

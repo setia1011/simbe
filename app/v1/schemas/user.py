@@ -12,9 +12,17 @@ class Role(MyBaseModel):
    role: Union[str, None] = None
    role_description: Union[str, None] = None
 
+class RolePost(MyBaseModel):
+   role: str
+   role_description: Union[str, None] = None
+
 class IdType(MyBaseModel):
    id: Union[int, None] = None
    id_type: Union[str, None] = None
+   id_description: Union[str, None] = None
+
+class IdTypePost(MyBaseModel):
+   id_type: str
    id_description: Union[str, None] = None
 
 class User(MyBaseModel):
@@ -36,3 +44,14 @@ class User(MyBaseModel):
    created_at: Union[datetime.datetime, None] = None
    editor: Union[int, None] = None
    updated_at: Union[datetime.datetime, None] = None
+
+class UserPost(MyBaseModel):
+   username: str
+   password: str
+   email: EmailStr
+   name: str
+   role_id: Union[int, None] = None
+   id_type_id: Union[int, None] = None
+   id_number: Union[str, None] = None
+   phone: Union[str, None] = None
+   address: Union[str, None] = None

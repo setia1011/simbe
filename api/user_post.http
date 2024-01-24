@@ -1,0 +1,16 @@
+POST /v1/api/user HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+Accept: */*
+
+{
+   "username": "wafi",
+   "password": "123",
+   "email": "wafi@gmail.com",
+   "name": "Wafi D. El Fahmi",
+   "role_id": 1,
+   "id_type_id": 1,
+   "id_number": "1233",
+   "phone": "1233",
+   "address": "tess"
+}
