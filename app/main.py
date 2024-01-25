@@ -12,7 +12,7 @@ def get_application():
       version="v0.1.0-alpha",
       terms_of_service="https://github.com/setia1011/simbe",
       contact={
-         "name": "Setiadi H.",
+         "name": "Setia",
          "url": "https://github.com/setia1011/simbe",
          "email": "setiadi1457@gmail.com",
       }
