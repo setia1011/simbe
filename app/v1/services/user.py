@@ -19,8 +19,6 @@ def role_post(t: sc_user.RolePost, db: Session = Depends):
    b = db.execute(select(Role).filter(Role.id==a.lastrowid)).scalar_one_or_none()
    return b
 
-
-
 def id_type_post(t: sc_user.IdTypePost, db: Session = Depends):
    a = db.execute(insert(IdType).values(id_type=t.id_type, id_description=t.id_description))
    b = db.execute(select(IdType).filter(IdType.id==a.lastrowid)).scalar_one_or_none()
