@@ -18,7 +18,7 @@ def user_patch(t: sc_user.UserPost, db: Session = Depends):
       raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='User not found')
    # insert editor, you can get editor from session
    user.editor = 1
-   for key, value in t.model_dump(exclude_unset=True).items():
+   for key, value in t.model_dump(exclude_unset=True, exclude_none=True).items():
       setattr(user, key, value)
    return user
 
