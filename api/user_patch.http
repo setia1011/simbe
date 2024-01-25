@@ -1,0 +1,16 @@
+PATCH /v1/api/user HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+Accept: */*
+
+{
+   "username": "setia",
+   "password": "123",
+   "email": "setia@techack.com",
+   "name": "Setiadi",
+   "role_id": 1,
+   "id_type_id": 1,
+   "id_number": "1233455",
+   "phone": "123323233",
+   "address": "Jl. Merdeka No. 1002, Jakarta, Indonesia"
+}
