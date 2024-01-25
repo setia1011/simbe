@@ -7,7 +7,7 @@ simbe
 │   ├── env.py
 │   ├── script.py.mako
 │   └── versions
-│       └── d3dadd4bff67_.py
+│       └── xxx_.py
 ├── alembic.ini
 ├── app
 │   ├── core
@@ -16,7 +16,7 @@ simbe
 │   ├── main.py
 │   ├── utils
 │   └── v1
-│       ├── api.py
+│       ├── __init__.py
 │       ├── models
 │       ├── routers
 │       ├── schemas
