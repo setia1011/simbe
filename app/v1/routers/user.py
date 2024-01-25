@@ -1,11 +1,6 @@
-import datetime
-import math
-from typing import Union
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from app.core.database import db_sync_session
-from app.v1.models.user import User
-from app.v1.schemas import err as sc_err
 from app.v1.schemas import user as sc_user
 from app.v1.services import user as sv_user
 
