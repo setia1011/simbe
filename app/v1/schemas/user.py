@@ -55,3 +55,14 @@ class UserPost(MyBaseModel):
    id_number: Union[str, None] = None
    phone: Union[str, None] = None
    address: Union[str, None] = None
+
+class UserPatch(MyBaseModel):
+   username: str
+   password: Union[str, None] = None
+   email: Union[EmailStr, None] = None
+   name: Union[str, None] = None
+   role_id: Union[int, None] = None
+   id_type_id: Union[int, None] = None
+   id_number: Union[str, None] = None
+   phone: Union[str, None] = None
+   address: Union[str, None] = None
